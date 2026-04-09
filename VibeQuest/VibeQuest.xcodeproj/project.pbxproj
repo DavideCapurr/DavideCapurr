@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0BB2F0EB8E0FF8D702AD52 /* QuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7618D1A6B248F005C40DDD /* QuestModel.swift */; };
+		6FCFFDE7CF729E75A9066EC9 /* SubmissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D884078A8BCC93AD85705979 /* SubmissionModel.swift */; };
+		B1B5FD9B8CDF64CA4DA2CA93 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24536A069339D3487416955D /* TransactionModel.swift */; };
+		77A6A2094233437068D1032A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA0F6500EEE16FF766C4E3A /* UserModel.swift */; };
+		2D4D95805685E14460830C83 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585CBA533E46C865E2E3794C /* AuthService.swift */; };
+		5F043886F577368DBBF8347E /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC706DD251A660BE2F40E15 /* FirestoreService.swift */; };
+		E39549BE8053F06C83082277 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF044A44A49C714AB55EDB3F /* LocationService.swift */; };
+		7FD6DD67D2F64F8A3711E240 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CFF2275A6A3602121A502 /* StorageService.swift */; };
+		7D7D5A63CAD0CBFF60B1F83F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458ACC99ADAA1140029437E /* Constants.swift */; };
+		4CC5CA03819E4CA24CD3CFB0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF630309DCC94C8119B0793 /* Theme.swift */; };
+		046CE9AB1087C3BA5DAFB02F /* VibeQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C7438F4BC1D829650B663 /* VibeQuestApp.swift */; };
+		9CD74374E9EC860C26D870E1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92100B42C2EEA5291FC7507A /* AuthViewModel.swift */; };
+		EAE0424F678232743EDF7562 /* CreateQuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4191299434CBA0619F9B7 /* CreateQuestViewModel.swift */; };
+		A7A33392963B7AFBF41934F8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A27AAC0AB91A21EF8CF716 /* ProfileViewModel.swift */; };
+		4EB8E5359158A049D4D0EF16 /* QuestDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5197A8852D746759303BBE6 /* QuestDetailViewModel.swift */; };
+		A62BBB4FC6A552BC3EFE895A /* QuestMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD2186D7FC87F913C8C659 /* QuestMapViewModel.swift */; };
+		5DCB0E143F854CA8EDEE0F0D /* SubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5A833243A43E4BF58BC50 /* SubmissionViewModel.swift */; };
+		B6C9C1798C83C825CB1425AE /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE564B4B0796941EEF85A7 /* AuthScreen.swift */; };
+		EF7CE6E2CD03398AC3B8DF9D /* QuestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E84EE4F309683229232112 /* QuestCard.swift */; };
+		BB36A1CE7C60406C5D4773DA /* RewardBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6112D8B86C5E93376D67E8 /* RewardBadge.swift */; };
+		A3AC985969910EE40097665D /* StatusChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC8A5984BD717B4EB4966CF /* StatusChip.swift */; };
+		5A69189D2E0E52E69B8FA6F8 /* VQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627461282A99ADA78E4F0A84 /* VQButton.swift */; };
+		8AF46975FC3E3F487699BD8F /* VQTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0D7EBF1C111BD8E4025BD /* VQTextField.swift */; };
+		83466DD206C90A0A571091AB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5FF5FB9F80C3591BD1A60 /* MainTabView.swift */; };
+		52DFEC13C96656ADF77A903D /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19115DD28868E0AD6EB0E983 /* MapScreen.swift */; };
+		CF0B46098F77D6740F857791 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177FF7E23199EAFE9882DF34 /* ProfileScreen.swift */; };
+		E2CEF9B786FB576BB920FBBF /* CreateQuestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F968DCB00BC113001087726 /* CreateQuestScreen.swift */; };
+		7EBE9234E30931F092849280 /* MyQuestsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CDCD11AE70E65D90CA754D /* MyQuestsScreen.swift */; };
+		EFE92833BA248DDE2E434FD3 /* QuestDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4476D2951EA45B903901D8 /* QuestDetailSheet.swift */; };
+		DEEAAC4A49A30BFDA4B10430 /* SubmitProofScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C81F17CD4795181FE26C2D8 /* SubmitProofScreen.swift */; };
+		277021D121CEDA96E1E86B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F2D4C591D57E75D38A25AA /* Assets.xcassets */; };
+		429E0FCF5CF28F12142A925A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF80D4918E03B9FC0B1B092B /* FirebaseAuth */; };
+		BB0D2C33EC8D07B5E7C122D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 303CDF8A127DF4429048A37B /* FirebaseFirestore */; };
+		42E4DF98C9CA30E3E894B706 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BBC32B989A54236347430F61 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		780C8AAA790E1B338A09B333 /* VibeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7618D1A6B248F005C40DDD /* QuestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestModel.swift; sourceTree = "<group>"; };
+		D884078A8BCC93AD85705979 /* SubmissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionModel.swift; sourceTree = "<group>"; };
+		24536A069339D3487416955D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		EAA0F6500EEE16FF766C4E3A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		585CBA533E46C865E2E3794C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4FC706DD251A660BE2F40E15 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		AF044A44A49C714AB55EDB3F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E32CFF2275A6A3602121A502 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		6458ACC99ADAA1140029437E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCF630309DCC94C8119B0793 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B36C7438F4BC1D829650B663 /* VibeQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeQuestApp.swift; sourceTree = "<group>"; };
+		92100B42C2EEA5291FC7507A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		90E4191299434CBA0619F9B7 /* CreateQuestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestViewModel.swift; sourceTree = "<group>"; };
+		E0A27AAC0AB91A21EF8CF716 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D5197A8852D746759303BBE6 /* QuestDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailViewModel.swift; sourceTree = "<group>"; };
+		73CD2186D7FC87F913C8C659 /* QuestMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestMapViewModel.swift; sourceTree = "<group>"; };
+		4CB5A833243A43E4BF58BC50 /* SubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionViewModel.swift; sourceTree = "<group>"; };
+		B9DE564B4B0796941EEF85A7 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		80E84EE4F309683229232112 /* QuestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCard.swift; sourceTree = "<group>"; };
+		3A6112D8B86C5E93376D67E8 /* RewardBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardBadge.swift; sourceTree = "<group>"; };
+		2DC8A5984BD717B4EB4966CF /* StatusChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusChip.swift; sourceTree = "<group>"; };
+		627461282A99ADA78E4F0A84 /* VQButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VQButton.swift; sourceTree = "<group>"; };
+		FBD0D7EBF1C111BD8E4025BD /* VQTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VQTextField.swift; sourceTree = "<group>"; };
+		A0B5FF5FB9F80C3591BD1A60 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		19115DD28868E0AD6EB0E983 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		177FF7E23199EAFE9882DF34 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		0F968DCB00BC113001087726 /* CreateQuestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestScreen.swift; sourceTree = "<group>"; };
+		38CDCD11AE70E65D90CA754D /* MyQuestsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuestsScreen.swift; sourceTree = "<group>"; };
+		AB4476D2951EA45B903901D8 /* QuestDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailSheet.swift; sourceTree = "<group>"; };
+		4C81F17CD4795181FE26C2D8 /* SubmitProofScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitProofScreen.swift; sourceTree = "<group>"; };
+		63157BB21ED361AAFDC55A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F2D4C591D57E75D38A25AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		276662A8D5283E46BFE15117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429E0FCF5CF28F12142A925A /* FirebaseAuth in Frameworks */,
+				BB0D2C33EC8D07B5E7C122D2 /* FirebaseFirestore in Frameworks */,
+				42E4DF98C9CA30E3E894B706 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A986E00F906A00965AD5ED = {
+			isa = PBXGroup;
+			children = (
+				1EEDA6E1AC585B01FC43393E /* VibeQuest */,
+				090EB37ADAEC9FBF202CDB05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090EB37ADAEC9FBF202CDB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780C8AAA790E1B338A09B333 /* VibeQuest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EEDA6E1AC585B01FC43393E /* VibeQuest */ = {
+			isa = PBXGroup;
+			children = (
+				BD18A309AE758FD00181E389 /* Models */,
+				FED84A81D0FB22163BA11E95 /* Services */,
+				DB0452681F2BE67EC20441AE /* Utils */,
+				2516FA69D7CDBC8B46C0B425 /* ViewModels */,
+				E7685036772A34056155CCC3 /* Views */,
+				B36C7438F4BC1D829650B663 /* VibeQuestApp.swift */,
+				63157BB21ED361AAFDC55A55 /* Info.plist */,
+				C1F2D4C591D57E75D38A25AA /* Assets.xcassets */,
+			);
+			path = VibeQuest;
+			sourceTree = "<group>";
+		};
+		BD18A309AE758FD00181E389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D7618D1A6B248F005C40DDD /* QuestModel.swift */,
+				D884078A8BCC93AD85705979 /* SubmissionModel.swift */,
+				24536A069339D3487416955D /* TransactionModel.swift */,
+				EAA0F6500EEE16FF766C4E3A /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FED84A81D0FB22163BA11E95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				585CBA533E46C865E2E3794C /* AuthService.swift */,
+				4FC706DD251A660BE2F40E15 /* FirestoreService.swift */,
+				AF044A44A49C714AB55EDB3F /* LocationService.swift */,
+				E32CFF2275A6A3602121A502 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB0452681F2BE67EC20441AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6458ACC99ADAA1140029437E /* Constants.swift */,
+				BCF630309DCC94C8119B0793 /* Theme.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2516FA69D7CDBC8B46C0B425 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92100B42C2EEA5291FC7507A /* AuthViewModel.swift */,
+				90E4191299434CBA0619F9B7 /* CreateQuestViewModel.swift */,
+				E0A27AAC0AB91A21EF8CF716 /* ProfileViewModel.swift */,
+				D5197A8852D746759303BBE6 /* QuestDetailViewModel.swift */,
+				73CD2186D7FC87F913C8C659 /* QuestMapViewModel.swift */,
+				4CB5A833243A43E4BF58BC50 /* SubmissionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E7685036772A34056155CCC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30D611D806CB9A3863FF28E2 /* Auth */,
+				318AFEC241A339A7E54AD22F /* Components */,
+				A8D310C21A0AAA978C2FF86E /* Map */,
+				C5D0F0716DBDA24C39D8AE1D /* Profile */,
+				38ED270CB4A693E54CF5DADA /* Quest */,
+				112A39ED417E5E3459507D52 /* Submission */,
+				A0B5FF5FB9F80C3591BD1A60 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30D611D806CB9A3863FF28E2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B9DE564B4B0796941EEF85A7 /* AuthScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		318AFEC241A339A7E54AD22F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				80E84EE4F309683229232112 /* QuestCard.swift */,
+				3A6112D8B86C5E93376D67E8 /* RewardBadge.swift */,
+				2DC8A5984BD717B4EB4966CF /* StatusChip.swift */,
+				627461282A99ADA78E4F0A84 /* VQButton.swift */,
+				FBD0D7EBF1C111BD8E4025BD /* VQTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A8D310C21A0AAA978C2FF86E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				19115DD28868E0AD6EB0E983 /* MapScreen.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C5D0F0716DBDA24C39D8AE1D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				177FF7E23199EAFE9882DF34 /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		38ED270CB4A693E54CF5DADA /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				0F968DCB00BC113001087726 /* CreateQuestScreen.swift */,
+				38CDCD11AE70E65D90CA754D /* MyQuestsScreen.swift */,
+				AB4476D2951EA45B903901D8 /* QuestDetailSheet.swift */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		112A39ED417E5E3459507D52 /* Submission */ = {
+			isa = PBXGroup;
+			children = (
+				4C81F17CD4795181FE26C2D8 /* SubmitProofScreen.swift */,
+			);
+			path = Submission;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DB22E3DA6FFD1BA1843950 /* VibeQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FAFA7EA62C7E831DB3E0E3D /* Build configuration list for PBXNativeTarget "VibeQuest" */;
+			buildPhases = (
+				CF770D2B53577876F6BDE8EC /* Sources */,
+				276662A8D5283E46BFE15117 /* Frameworks */,
+				AC4960988EB1FA9509C40DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VibeQuest;
+			packageProductDependencies = (
+				EF80D4918E03B9FC0B1B092B /* FirebaseAuth */,
+				303CDF8A127DF4429048A37B /* FirebaseFirestore */,
+				BBC32B989A54236347430F61 /* FirebaseStorage */,
+			);
+			productName = VibeQuest;
+			productReference = 780C8AAA790E1B338A09B333 /* VibeQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6237035DE2B9AD82B98E3A29 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5D2887132AB246E15A9A79E5 /* Build configuration list for PBXProject "VibeQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40A986E00F906A00965AD5ED;
+			packageReferences = (
+				868479C4ADFDE99D566A625A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 090EB37ADAEC9FBF202CDB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DB22E3DA6FFD1BA1843950 /* VibeQuest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC4960988EB1FA9509C40DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277021D121CEDA96E1E86B7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF770D2B53577876F6BDE8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BB2F0EB8E0FF8D702AD52 /* QuestModel.swift in Sources */,
+				6FCFFDE7CF729E75A9066EC9 /* SubmissionModel.swift in Sources */,
+				B1B5FD9B8CDF64CA4DA2CA93 /* TransactionModel.swift in Sources */,
+				77A6A2094233437068D1032A /* UserModel.swift in Sources */,
+				2D4D95805685E14460830C83 /* AuthService.swift in Sources */,
+				5F043886F577368DBBF8347E /* FirestoreService.swift in Sources */,
+				E39549BE8053F06C83082277 /* LocationService.swift in Sources */,
+				7FD6DD67D2F64F8A3711E240 /* StorageService.swift in Sources */,
+				7D7D5A63CAD0CBFF60B1F83F /* Constants.swift in Sources */,
+				4CC5CA03819E4CA24CD3CFB0 /* Theme.swift in Sources */,
+				046CE9AB1087C3BA5DAFB02F /* VibeQuestApp.swift in Sources */,
+				9CD74374E9EC860C26D870E1 /* AuthViewModel.swift in Sources */,
+				EAE0424F678232743EDF7562 /* CreateQuestViewModel.swift in Sources */,
+				A7A33392963B7AFBF41934F8 /* ProfileViewModel.swift in Sources */,
+				4EB8E5359158A049D4D0EF16 /* QuestDetailViewModel.swift in Sources */,
+				A62BBB4FC6A552BC3EFE895A /* QuestMapViewModel.swift in Sources */,
+				5DCB0E143F854CA8EDEE0F0D /* SubmissionViewModel.swift in Sources */,
+				B6C9C1798C83C825CB1425AE /* AuthScreen.swift in Sources */,
+				EF7CE6E2CD03398AC3B8DF9D /* QuestCard.swift in Sources */,
+				BB36A1CE7C60406C5D4773DA /* RewardBadge.swift in Sources */,
+				A3AC985969910EE40097665D /* StatusChip.swift in Sources */,
+				5A69189D2E0E52E69B8FA6F8 /* VQButton.swift in Sources */,
+				8AF46975FC3E3F487699BD8F /* VQTextField.swift in Sources */,
+				83466DD206C90A0A571091AB /* MainTabView.swift in Sources */,
+				52DFEC13C96656ADF77A903D /* MapScreen.swift in Sources */,
+				CF0B46098F77D6740F857791 /* ProfileScreen.swift in Sources */,
+				E2CEF9B786FB576BB920FBBF /* CreateQuestScreen.swift in Sources */,
+				7EBE9234E30931F092849280 /* MyQuestsScreen.swift in Sources */,
+				EFE92833BA248DDE2E434FD3 /* QuestDetailSheet.swift in Sources */,
+				DEEAAC4A49A30BFDA4B10430 /* SubmitProofScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4921A738A79D1D229FCAAE75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ACCESSIBILITY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A7B19E98DA7409848EA15FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ACCESSIBILITY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		033EE00DD5D30FED1FBABE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VibeQuest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibequest.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7D1AF9AD18376FF4E825CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VibeQuest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibequest.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D2887132AB246E15A9A79E5 /* Build configuration list for PBXProject "VibeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4921A738A79D1D229FCAAE75 /* Debug */,
+				3A7B19E98DA7409848EA15FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FAFA7EA62C7E831DB3E0E3D /* Build configuration list for PBXNativeTarget "VibeQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033EE00DD5D30FED1FBABE94 /* Debug */,
+				B7D1AF9AD18376FF4E825CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		868479C4ADFDE99D566A625A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF80D4918E03B9FC0B1B092B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868479C4ADFDE99D566A625A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		303CDF8A127DF4429048A37B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868479C4ADFDE99D566A625A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BBC32B989A54236347430F61 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868479C4ADFDE99D566A625A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6237035DE2B9AD82B98E3A29 /* Project object */;
+}
