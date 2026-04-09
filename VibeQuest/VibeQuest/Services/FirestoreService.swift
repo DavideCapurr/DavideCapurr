@@ -50,12 +50,16 @@ final class FirestoreService {
         AsyncStream { continuation in
             let listener = db.collection(QuestConstants.questsCollection)
                 .whereField("status", isEqualTo: QuestStatus.open.rawValue)
-                .order(by: "createdAt", descending: true)
                 .addSnapshotListener { snapshot, error in
+                    if let error {
+                        print("[VibeQuest] streamOpenQuests error: \(error.localizedDescription)")
+                        return
+                    }
                     guard let documents = snapshot?.documents else { return }
                     let quests = documents.compactMap { doc in
                         try? doc.data(as: Quest.self)
                     }
+                    .sorted { $0.createdAt > $1.createdAt }
                     continuation.yield(quests)
                 }
 
@@ -70,12 +74,16 @@ final class FirestoreService {
         return AsyncStream { continuation in
             let listener = db.collection(QuestConstants.questsCollection)
                 .whereField(field, isEqualTo: userId)
-                .order(by: "createdAt", descending: true)
                 .addSnapshotListener { snapshot, error in
+                    if let error {
+                        print("[VibeQuest] streamUserQuests(\(field)) error: \(error.localizedDescription)")
+                        return
+                    }
                     guard let documents = snapshot?.documents else { return }
                     let quests = documents.compactMap { doc in
                         try? doc.data(as: Quest.self)
                     }
+                    .sorted { $0.createdAt > $1.createdAt }
                     continuation.yield(quests)
                 }
 
@@ -142,13 +150,14 @@ final class FirestoreService {
                 return nil
             }
 
-            guard let balance = userDoc.data()?["walletBalance"] as? Int else {
+            guard let balanceNumber = userDoc.data()?["walletBalance"] as? NSNumber else {
                 let error = NSError(domain: "VibeQuest", code: 1, userInfo: [
                     NSLocalizedDescriptionKey: "Could not read wallet balance"
                 ])
                 errorPointer?.pointee = error
                 return nil
             }
+            let balance = balanceNumber.intValue
 
             guard balance >= quest.totalReward else {
                 let error = NSError(domain: "VibeQuest", code: 2, userInfo: [
@@ -159,7 +168,10 @@ final class FirestoreService {
             }
 
             let newBalance = balance - quest.totalReward
-            transaction.updateData(["walletBalance": newBalance], forDocument: userRef)
+            transaction.updateData([
+                "walletBalance": newBalance,
+                "questsCreated": FieldValue.increment(Int64(1))
+            ], forDocument: userRef)
 
             do {
                 try transaction.setData(from: quest, forDocument: questRef)
@@ -205,14 +217,14 @@ final class FirestoreService {
                 return nil
             }
 
-            guard let balance = earnerDoc.data()?["walletBalance"] as? Int else {
+            guard let balanceNumber = earnerDoc.data()?["walletBalance"] as? NSNumber else {
                 let error = NSError(domain: "VibeQuest", code: 1, userInfo: [
                     NSLocalizedDescriptionKey: "Could not read earner balance"
                 ])
                 errorPointer?.pointee = error
                 return nil
             }
-
+            let balance = balanceNumber.intValue
             let newBalance = balance + earnerReward
 
             transaction.updateData([

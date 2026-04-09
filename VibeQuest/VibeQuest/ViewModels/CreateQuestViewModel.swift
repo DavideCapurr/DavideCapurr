@@ -78,12 +78,14 @@ final class CreateQuestViewModel: ObservableObject {
         )
 
         do {
-            _ = try await firestoreService.createQuestWithPayment(
+            let questId = try await firestoreService.createQuestWithPayment(
                 quest: quest,
                 requesterId: requesterId
             )
+            print("[VibeQuest] Quest created: \(questId)")
             isCompleted = true
         } catch {
+            print("[VibeQuest] Create quest error: \(error)")
             errorMessage = error.localizedDescription
         }
 
