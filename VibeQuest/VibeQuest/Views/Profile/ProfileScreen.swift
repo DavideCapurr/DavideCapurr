@@ -65,9 +65,9 @@ struct ProfileScreen: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(VQTheme.background, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .task {
+            .onAppear {
                 if let uid = authViewModel.currentUserId {
-                    await viewModel.loadProfile(userId: uid)
+                    Task { await viewModel.loadProfile(userId: uid) }
                 }
             }
             .refreshable {

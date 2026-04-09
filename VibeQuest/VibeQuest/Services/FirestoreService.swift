@@ -103,7 +103,6 @@ final class FirestoreService {
     func getSubmission(forQuest questId: String) async throws -> Submission? {
         let snapshot = try await db.collection(QuestConstants.submissionsCollection)
             .whereField("questId", isEqualTo: questId)
-            .order(by: "createdAt", descending: true)
             .limit(to: 1)
             .getDocuments()
 
